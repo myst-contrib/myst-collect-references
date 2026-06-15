@@ -1,0 +1,17 @@
+version: 1
+project:
+  title: myst-collect-references
+  github: myst-contrib/myst-collect-references
+  plugins:
+    - ../src/aggregate-references.mjs
+    - https://raw.githubusercontent.com/jupyter-book/myst-plugins/main/plugins/demo/src/index.mjs
+  bibliography:
+    - references.bib
+  references:
+    guide: https://mystmd.org/guide
+  toc:
+    - file: index.md
+    - file: page-one.md
+    - file: page-two.md
+site:
+  template: book-theme
